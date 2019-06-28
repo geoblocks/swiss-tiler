@@ -1,0 +1,34 @@
+{
+  "name": "swiss-tiler",
+  "version": "0.0.0",
+  "description": "Use tippecanoe to generate vector tiles that are compatible with the swisstopo tile grid.",
+  "main": "src/index.js",
+  "bin": {
+    "swiss-tiler": "bin/cli.js"
+  },
+  "scripts": {
+    "start": "node bin/cli.js example/switzerland.geojson example/tiles"
+  },
+  "repository": "github:geoblocks/swiss-tiler",
+  "files": [
+    "/bin",
+    "/src"
+  ],
+  "author": "Roman Karavia",
+  "license": "MIT",
+  "dependencies": {
+    "@turf/clone": "^6.0.2",
+    "@turf/meta": "^6.0.2",
+    "chalk": "^2.4.2",
+    "mbview": "^2.0.1",
+    "optimist": "^0.6.1",
+    "shelljs": "^0.8.3",
+    "swissgrid": "^1.0.0",
+    "tmp": "^0.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.18.0"
+  }
+}
