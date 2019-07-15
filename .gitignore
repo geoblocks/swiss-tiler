@@ -1,2 +1,3 @@
-/example/tiles
-/node_modules
+/example/tiles/
+/node_modules/
+/package-lock.json
